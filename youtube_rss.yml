@@ -1,0 +1,29 @@
+name: YouTube RSS Daily Email
+
+on:
+  schedule:
+    - cron: '0 10 * * *'   # 10:00 AM UTC every day
+  workflow_dispatch:        # allows manual trigger from GitHub Actions tab
+
+jobs:
+  send-youtube-digest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install feedparser
+
+      - name: Run YouTube RSS script
+        env:
+          GMAIL_SENDER:       ${{ secrets.GMAIL_SENDER }}
+          GMAIL_RECEIVER:     ${{ secrets.GMAIL_RECEIVER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python Yt_rss.py
