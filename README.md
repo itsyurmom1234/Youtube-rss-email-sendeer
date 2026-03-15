@@ -23,7 +23,7 @@ If you're a fan of Freya and don't want to rely on YouTube's notoriously unrelia
 
 **Freya Skye** is a British singer, songwriter and actress from Buckinghamshire, England. She rose to fame representing the UK at the **Junior Eurovision Song Contest 2022** with her debut single *"Lose My Head"*. Since then she's signed a triple deal with **Hollywood Records**, **Disney Music Publishing**, and **Disney Branded Television** — making history as the youngest artist to do so.
 
-She stars as **Nova Bright** in *Zombies 4: Dawn of the Vampires* and has released her debut EP ***stardust***, featuring singles like *"Can't Fake It"*, *"Who I Thought I Knew"*, and *"silent treatment"*. Her YouTube channel has crossed **1.29 million subscribers** and over **1 billion views**.
+She stars as **Nova Bright** in *Zombies 4: Dawn of the Vampires* and has released her debut EP ***stardust***, featuring singles like *"golden boy"*, *"why’d you have to call"*, and *"silent treatment"*. Her YouTube channel has crossed **776K subscribers** and over **361,984,377 views**.
 
 She is genuinely one of the most talented young artists out there right now. Go stream *stardust* immediately.
 
