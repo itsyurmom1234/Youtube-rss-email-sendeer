@@ -82,20 +82,26 @@ To find a channel ID: go to the channel page, right click → View Page Source, 
 
 ---
 
-## Requirements
+## Running locally / self-hosting
 
-No local setup needed — everything runs on GitHub Actions for free.
+Want to run this on your own machine, NAS, or server instead of GitHub Actions?
 
-If you want to run it locally:
+Head to the [Releases](https://github.com/itsyurmom1234/Youtube-rss-email-sendeer/releases) tab — it includes `Yt_rss.py` ready to run anywhere.
 
+### Setup
+
+Install the dependency:
 ```bash
 pip install feedparser
-export GMAIL_SENDER="you@gmail.com"
-export GMAIL_RECEIVER="you@gmail.com"
-export GMAIL_APP_PASSWORD="your_app_password"
+```
+
+Then run:
+```bash
 python Yt_rss.py
 ```
 
+To automate it, add a scheduled task on your system pointing to the downloaded script.
+
 ---
 
-*Built by a Freya Skye fan, for Freya Skye fans. Go listen to stardust.* 🌟
+*Built by a Freya Skye fan, for Freya Skye fans(and fans of other youtubers technically but noone else other than freya matters). Go listen to stardust.* 🌟
