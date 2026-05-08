@@ -16,11 +16,16 @@ rss_url = "https://www.youtube.com/feeds/videos.xml?channel_id=UCxtDwRDm6Ah8Ig_D
 feed    = feedparser.parse(rss_url)
 
 if feed.get("status") != 200:
-    print("Failed to get RSS feed. Status code:", feed.status)
+    print("Failed to get RSS feed. Status code:", feed.get("status"))  # fix: was feed.status
     exit(1)
 
 body = ""
 for entry in feed.entries:
+    if not getattr(entry, "published_parsed", None):  # fix: guard against missing publish date
+        continue
+    if not getattr(entry, "media_thumbnail", None):   # fix: guard against missing thumbnail
+        continue
+
     pub = datetime(*entry.published_parsed[:6], tzinfo=timezone.utc)
     if pub.strftime("%Y-%m-%d") == yesterday_str:
         title     = entry.title
