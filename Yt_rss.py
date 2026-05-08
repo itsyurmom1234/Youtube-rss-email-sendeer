@@ -15,7 +15,7 @@ yesterday_str = yesterday.strftime("%Y-%m-%d")
 rss_url = "https://www.youtube.com/feeds/videos.xml?channel_id=UCxtDwRDm6Ah8Ig_DsvzMklQ"
 feed    = feedparser.parse(rss_url)
 
-if feed.status != 200:
+if feed.get("status") != 200:
     print("Failed to get RSS feed. Status code:", feed.status)
     exit(1)
 
